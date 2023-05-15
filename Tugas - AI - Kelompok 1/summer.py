@@ -44,7 +44,7 @@ def takeCommand():
         audio = r.listen(source)
         
     try:
-        print("Recogizing..")
+        print("Recognizing..")
         query = r.recognize_google(audio, language="en-us")
         print(f"user said: {query}\n")
         
@@ -79,12 +79,6 @@ elif "open google" in query.lower():
     url = "google.com"
     chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
     webbrowser.get(chrome_path).open(url)
-    
-elif "play music" in query.lower():
-    songs_dir = "C:\\Users\\ACER\\Music\\Spotify"
-    songs = os.listdir(songs_dir)
-    print(songs)
-    os.startfile(os.path.join(songs_dir, songs[0]))
     
 elif "the time" in query.lower():
     strTime = datetime.datetime.now().strftime("%H:%M")
