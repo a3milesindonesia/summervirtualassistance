@@ -85,7 +85,7 @@ elif "the time" in query.lower():
     speak(f"{MASTER} the time is {strTime}")
     
 elif "open music" in query.lower():
-    url = "open.spotify.com"
+    url = "open.spotify.com/intl-id"
     chrome_path = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s"
     webbrowser.get(chrome_path).open(url)
     
