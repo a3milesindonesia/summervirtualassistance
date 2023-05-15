@@ -8,7 +8,7 @@ import smtplib
 
 print("initializing summer")
 
-MASTER = "darling"
+MASTER = ""
 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty('voices')
